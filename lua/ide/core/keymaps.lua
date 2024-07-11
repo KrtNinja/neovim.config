@@ -55,5 +55,7 @@ keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move Up" })
 keymap("i", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 keymap("n", "<esc>", "<cmd>noh<cr><esc>", { desc = "Clear search highlights" })
 keymap({ "i", "x", "n", "s"}, "<c-s>", "<cmd>w<cr>", { desc = "Save file" })
+keymap("n", "<c-U>", "<c-U>zz", { remap = true })
+keymap("n", "<c-D>", "<c-D>zz", { remap = true })
 
 keymap("n", "<leader>ir", "<cmd>source %<cr>", { desc = "Refresh config" })
